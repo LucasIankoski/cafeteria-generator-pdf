@@ -21,40 +21,32 @@ public class PdfGenerator {
         String dest = "lista_de_alunos_turma.pdf";
         String logoPath = "logo_vettorello.png"; // Substitua "path_to_logo.png" pelo caminho real para o seu logo
         String[] students = {
-                "Adrian Gabriel Silva da Rosa",
-                "Adriano Silva da Rosa",
-                "Ana Luiza Passos de Godis",
-                "Andressa Silva Bueno",
-                "Bento Tavares Fernandes",
-                "Daura Fagundes da Silva dos Santos",
+                "Alexsander Santos Pantaleão",
+                "Alicia Pazim da Costa",
+                "Anderson Riquelme Massena dos Santos",
                 "Débora de Cassia Orquiz",
-                "Dionatan Douglas da Silva",
-                "Emeli Luísa Rosanelli Alves",
-                "Gisele Silveira da Silva",
-                "Higor Mateus Silva da Silva",
-                "Jéssica Rodrigues Torales",
-                "Jorge Bruno Luz do Nascimento",
-                "Keila Machado Abadi",
-                "Kellyta da Silva Bicca Alves",
-                "Larissa de Oliveira Carati",
-                "Leandro Vieira dos Santos",
-                "Leandro Vilela Guimaraes",
-                "Lis Alves Zucoloto Machado",
-                "Luiz Filipe Torbes da Silva",
-                "Mara Alice Diniz",
-                "Paulo Isaías Maciel",
-                "Rafaela Ferreira Dilsson",
-                "Renata da Silva",
-                "Rodrigo Rodrigues Soares",
-                "Rosana Mara Villanova Bataglin",
-                "Silvia Uiara Mota da Silva França",
-                "Sonia Maria Andrade Machado",
-                "Tailon Robert Taquátia da Silva",
-                "Weslley Mikael Rodrigues Nunes",
-                "Yasmin Juliane Almeida Vieira",
-                "Yngrid Simas Ferreira"
+                "Gabrieli Skibinski de Freitas",
+                "Giovanna Silveira da Silva",
+                "Igor Farias Corrêa",
+                "Isabella Camboim Gomes",
+                "Jorge Leandro Saldanha Guimarães",
+                "Julia Nascimento Costa",
+                "Kauã Evandro Crisostomo da Rosa",
+                "Lorrana de Castro Cubas",
+                "Lucas Vigil Rodrigues",
+                "Maria Eduarda Ferreira Goulart",
+                "Maximiliano da Silva Nunes",
+                "Nathaly Saraiva Rodrigues",
+                "Pâmela Correia de Campos",
+                "Pedro Henrique da Cunha",
+                "Renata Simões Soares",
+                "Vanessa Leticia Bianchi de Matos",
+                "Vanessa Martins Bairros",
+                "Yamira Rafaela Campos Decke",
+                "Kathiely do Nascimento Severo",
+                "Elen Alessandra Onofre"
         };
-        String classCode = "171";
+        String classCode = "EJ7AN";
         String[] months = {"03", "04", "05", "06", "07"};
 
         try {
@@ -70,7 +62,7 @@ public class PdfGenerator {
                 document.add(logo);
 
                 document.add(new Paragraph("Cantina da Jaci").setFontSize(14));
-                document.add(new Paragraph("2024/I").setFontSize(14));
+                document.add(new Paragraph("2026/I").setFontSize(14));
                 document.add(new Paragraph("Nome do estudante: " + students[i]).setFontSize(20));
                 document.add(new Paragraph("Turma: " + classCode).setFontSize(20));
                 document.add(new Paragraph("Assinatura Coord. de Turno:").setFontSize(20));
@@ -95,7 +87,7 @@ public class PdfGenerator {
 
                     document.add(logo);
                     document.add(new Paragraph("Cantina da Jaci").setFontSize(14));
-                    document.add(new Paragraph("2024/I").setFontSize(14));
+                    document.add(new Paragraph("2026/I").setFontSize(14));
                     document.add(new Paragraph("Nome do estudante: " + students[i + 1]).setFontSize(20));
                     document.add(new Paragraph("Turma: " + classCode).setFontSize(20));
                     document.add(new Paragraph("Assinatura Coord. de Turno:").setFontSize(20));
@@ -128,3 +120,5 @@ public class PdfGenerator {
         }
     }
 }
+
+
